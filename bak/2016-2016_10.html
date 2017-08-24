@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - 2016_10</title>
+      <link rel="stylesheet" href="public/reset.css" />
+      <link rel="stylesheet" href="public/viewer.css" />
+      <link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="public/light-gallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/style.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Photo album</h1>
+        <h2></h2>
+      </a>
+    </header>
+    
+      <nav>
+            <li>
+            <!-- This album -->
+            <a href="2016.html">2016</a>
+            <!-- And nested album -->
+          </li>
+            <li>
+            <!-- This album -->
+            <a href="2016-2016_01.html">2016_01</a>
+            <!-- And nested album -->
+          </li>
+          
+            <li>
+            <!-- This album -->
+            <a href="2016-2016_02.html">2016_02</a>
+            <!-- And nested album -->
+          </li>
+          
+            <li>
+            <!-- This album -->
+            <a href="2016-2016_03.html">2016_03</a>
+            <!-- And nested album -->
+          </li>
+          
+            <li>
+            <!-- This album -->
+            <a href="2016-2016_04.html">2016_04</a>
+            <!-- And nested album -->
+          </li>
+          
+            <li>
+            <!-- This album -->
+            <a href="2016-2016_05.html">2016_05</a>
+            <!-- And nested album -->
+          </li>
+          
+            <li class="active">
+            <!-- This album -->
+            <a href="2016-2016_10.html">2016_10</a>
+            <!-- And nested album -->
+          </li>
+          
+            <li>
+            <!-- This album -->
+            <a href="2016-2016_12.html">2016_12</a>
+            <!-- And nested album -->
+          </li>
+          
+          
+            <li>
+            <!-- This album -->
+            <a href="2017.html">2017</a>
+            <!-- And nested album -->
+          </li>
+            <li>
+            <!-- This album -->
+            <a href="2017-2017_03.html">2017_03</a>
+            <!-- And nested album -->
+          </li>
+          
+            <li>
+            <!-- This album -->
+            <a href="2017-2017_04.html">2017_04</a>
+            <!-- And nested album -->
+          </li>
+          
+            <li>
+            <!-- This album -->
+            <a href="2017-2017_07.html">2017_07</a>
+            <!-- And nested album -->
+          </li>
+          
+          
+      </nav>
+    
+    <ul id="galleries">
+    </ul>
+    
+    <ul id="media">
+         <li data-src="media/large/2016/2016_10/IMG_0567.JPG"
+             data-sub-html=""
+             data-download-url="originals/2016/2016_10/IMG_0567.JPG">
+           <a href="originals/2016/2016_10/IMG_0567.JPG">
+             <img src="media/thumbs/2016/2016_10/IMG_0567.JPG"
+                  width="120"
+                  height="120"
+                  alt="IMG_0567.JPG" />
+           </a>
+         </li>
+         <li data-src="media/large/2016/2016_10/IMG_0577.JPG"
+             data-sub-html=""
+             data-download-url="originals/2016/2016_10/IMG_0577.JPG">
+           <a href="originals/2016/2016_10/IMG_0577.JPG">
+             <img src="media/thumbs/2016/2016_10/IMG_0577.JPG"
+                  width="120"
+                  height="120"
+                  alt="IMG_0577.JPG" />
+           </a>
+         </li>
+         <li data-src="media/large/2016/2016_10/IMG_0578.JPG"
+             data-sub-html=""
+             data-download-url="originals/2016/2016_10/IMG_0578.JPG">
+           <a href="originals/2016/2016_10/IMG_0578.JPG">
+             <img src="media/thumbs/2016/2016_10/IMG_0578.JPG"
+                  width="120"
+                  height="120"
+                  alt="IMG_0578.JPG" />
+           </a>
+         </li>
+         <li data-src="media/large/2016/2016_10/IMG_0579.JPG"
+             data-sub-html=""
+             data-download-url="originals/2016/2016_10/IMG_0579.JPG">
+           <a href="originals/2016/2016_10/IMG_0579.JPG">
+             <img src="media/thumbs/2016/2016_10/IMG_0579.JPG"
+                  width="120"
+                  height="120"
+                  alt="IMG_0579.JPG" />
+           </a>
+         </li>
+         <li data-src="media/large/2016/2016_10/IMG_0580.JPG"
+             data-sub-html=""
+             data-download-url="originals/2016/2016_10/IMG_0580.JPG">
+           <a href="originals/2016/2016_10/IMG_0580.JPG">
+             <img src="media/thumbs/2016/2016_10/IMG_0580.JPG"
+                  width="120"
+                  height="120"
+                  alt="IMG_0580.JPG" />
+           </a>
+         </li>
+    </ul>
+    
+    <!--
+      Optional footer
+    -->
+
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.js"></script>
+    <!-- LightGallery -->
+    <script src="public/light-gallery/js/lightgallery.js"></script>
+    <script src="public/light-gallery/js/lg-autoplay.js"></script>
+    <script src="public/light-gallery/js/lg-pager.js"></script>
+    <script src="public/light-gallery/js/lg-thumbnail.js"></script>
+    <script src="public/light-gallery/js/lg-video.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>

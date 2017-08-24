@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - 2014_11</title>
+      <link rel="stylesheet" href="public/reset.css" />
+      <link rel="stylesheet" href="public/viewer.css" />
+      <link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="public/light-gallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/style.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Holladay Album</h1>
+        <h2>2014-2014_11</h2>
+      </a>
+    </header>
+    
+
+    <nav>
+      <li><a href='2002.html'>2002</a></li>
+      <li><a href='2003.html'>2003</a></li>
+      <li><a href='2004.html'>2004</a></li>
+      <li><a href='2005.html'>2005</a></li>
+      <li><a href='2006.html'>2006</a></li>
+      <li><a href='2007.html'>2007</a></li>
+      <li><a href='2008.html'>2008</a></li>
+      <li><a href='2009.html'>2009</a></li>
+      <li><a href='2010.html'>2010</a></li>
+      <li><a href='2011.html'>2011</a></li>
+      <li><a href='2012.html'>2012</a></li>
+      <li><a href='2013.html'>2013</a></li>
+      <li><a href='2014.html'>2014</a></li>
+      <li><a href='2015.html'>2015</a></li>
+      <li><a href='2016.html'>2016</a></li>
+      <li><a href='2017.html'>2017</a></li>
+      <li><a href='Historic.html'>Historic</a></li>
+      <li><a href='Scouts.html'>Scouts</a></li>
+      <li><a href='Webelos.html'>Webelos</a></li>
+    </nav>
+        
+    <ul id="galleries">
+    </ul>
+    
+    <ul id="media">
+         <li data-src="media/large/2014/2014_11/IMG_0914.JPG"
+             data-sub-html=""
+             data-download-url="originals/2014/2014_11/IMG_0914.JPG">
+           <a href="originals/2014/2014_11/IMG_0914.JPG">
+             <img src="media/thumbs/2014/2014_11/IMG_0914.JPG"
+                  width="120"
+                  height="120"
+                  alt="IMG_0914.JPG" />
+           </a>
+         </li>
+         <li data-src="media/large/2014/2014_11/IMG_0915.JPG"
+             data-sub-html=""
+             data-download-url="originals/2014/2014_11/IMG_0915.JPG">
+           <a href="originals/2014/2014_11/IMG_0915.JPG">
+             <img src="media/thumbs/2014/2014_11/IMG_0915.JPG"
+                  width="120"
+                  height="120"
+                  alt="IMG_0915.JPG" />
+           </a>
+         </li>
+         <li data-src="media/large/2014/2014_11/IMG_0916.JPG"
+             data-sub-html=""
+             data-download-url="originals/2014/2014_11/IMG_0916.JPG">
+           <a href="originals/2014/2014_11/IMG_0916.JPG">
+             <img src="media/thumbs/2014/2014_11/IMG_0916.JPG"
+                  width="120"
+                  height="120"
+                  alt="IMG_0916.JPG" />
+           </a>
+         </li>
+         <li data-src="media/large/2014/2014_11/IMG_0917.JPG"
+             data-sub-html=""
+             data-download-url="originals/2014/2014_11/IMG_0917.JPG">
+           <a href="originals/2014/2014_11/IMG_0917.JPG">
+             <img src="media/thumbs/2014/2014_11/IMG_0917.JPG"
+                  width="120"
+                  height="120"
+                  alt="IMG_0917.JPG" />
+           </a>
+         </li>
+         <li data-src="media/large/2014/2014_11/IMG_1007.JPG"
+             data-sub-html=""
+             data-download-url="originals/2014/2014_11/IMG_1007.JPG">
+           <a href="originals/2014/2014_11/IMG_1007.JPG">
+             <img src="media/thumbs/2014/2014_11/IMG_1007.JPG"
+                  width="120"
+                  height="120"
+                  alt="IMG_1007.JPG" />
+           </a>
+         </li>
+    </ul>
+    
+    <!--
+      Optional footer
+    -->
+
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.js"></script>
+    <!-- LightGallery -->
+    <script src="public/light-gallery/js/lightgallery.js"></script>
+    <script src="public/light-gallery/js/lg-autoplay.js"></script>
+    <script src="public/light-gallery/js/lg-pager.js"></script>
+    <script src="public/light-gallery/js/lg-thumbnail.js"></script>
+    <script src="public/light-gallery/js/lg-video.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>

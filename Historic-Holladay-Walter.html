@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - Walter</title>
+      <link rel="stylesheet" href="public/reset.css" />
+      <link rel="stylesheet" href="public/viewer.css" />
+      <link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="public/light-gallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/style.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Holladay Album</h1>
+        <h2>Historic-Holladay-Walter</h2>
+      </a>
+    </header>
+    
+
+    <nav>
+      <li><a href='2002.html'>2002</a></li>
+      <li><a href='2003.html'>2003</a></li>
+      <li><a href='2004.html'>2004</a></li>
+      <li><a href='2005.html'>2005</a></li>
+      <li><a href='2006.html'>2006</a></li>
+      <li><a href='2007.html'>2007</a></li>
+      <li><a href='2008.html'>2008</a></li>
+      <li><a href='2009.html'>2009</a></li>
+      <li><a href='2010.html'>2010</a></li>
+      <li><a href='2011.html'>2011</a></li>
+      <li><a href='2012.html'>2012</a></li>
+      <li><a href='2013.html'>2013</a></li>
+      <li><a href='2014.html'>2014</a></li>
+      <li><a href='2015.html'>2015</a></li>
+      <li><a href='2016.html'>2016</a></li>
+      <li><a href='2017.html'>2017</a></li>
+      <li><a href='Historic.html'>Historic</a></li>
+      <li><a href='Scouts.html'>Scouts</a></li>
+      <li><a href='Webelos.html'>Webelos</a></li>
+    </nav>
+        
+    <ul id="galleries">
+     <li>
+       <a href="Historic-Holladay-Walter-Mission.html">
+         <h3>Mission</h3>
+         <div class="meta">
+           150 photos<br />
+           09 Sep 2011 - 17 Sep 2011
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/Historic/Holladay/Walter/Mission/Mission_02_000.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Mission/Mission_02_004.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Mission/Mission_02_005.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Mission/Mission_02_006.jpg" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="Historic-Holladay-Walter-Scouts.html">
+         <h3>Scouts</h3>
+         <div class="meta">
+           61 photos<br />
+           09 Sep 2011 - 09 Sep 2011
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/Historic/Holladay/Walter/Scouts/Hawaii_Scouts_001.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Scouts/Hawaii_Scouts_002.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Scouts/Hawaii_Scouts_003.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Scouts/Hawaii_Scouts_004.jpg" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="Historic-Holladay-Walter-Montana.html">
+         <h3>Montana</h3>
+         <div class="meta">
+           8 photos<br />
+           09 Sep 2011 - 09 Sep 2011
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/Historic/Holladay/Walter/Montana/Montana_001.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Montana/Montana_002.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Montana/Montana_003.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Montana/Montana_004.jpg" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="Historic-Holladay-Walter-Hawaii.html">
+         <h3>Hawaii</h3>
+         <div class="meta">
+           27 photos<br />
+           09 Sep 2011 - 09 Sep 2011
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/Historic/Holladay/Walter/Hawaii/Hawaii_002.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Hawaii/Hawaii_003.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Hawaii/Hawaii_004.jpg" /></li><li><img src="media/thumbs/Historic/Holladay/Walter/Hawaii/Hawaii_005.jpg" /></li>     </ul>
+       </a>
+     </li>
+    </ul>
+    
+    <ul id="media">
+    </ul>
+    
+    <!--
+      Optional footer
+    -->
+
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.js"></script>
+    <!-- LightGallery -->
+    <script src="public/light-gallery/js/lightgallery.js"></script>
+    <script src="public/light-gallery/js/lg-autoplay.js"></script>
+    <script src="public/light-gallery/js/lg-pager.js"></script>
+    <script src="public/light-gallery/js/lg-thumbnail.js"></script>
+    <script src="public/light-gallery/js/lg-video.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
